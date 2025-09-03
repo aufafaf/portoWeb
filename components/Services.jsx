@@ -13,10 +13,10 @@ const Services = () => {
       </p>
       <div className="grid grid-cols-auto sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-10 gap-6">
         {serviceData.map(({ icon, title, description, link }, index) => (
-          <div key={index} className="border border-gray-400 rounded-lg px-8 py-12 hover:-translate-y-2 duration-500 hover:bg-lightHover hover:shadow-black cursor-pointer">
+          <div key={index} className="border border-gray-400 rounded-lg px-8 py-12 hover:-translate-y-2 duration-500 hover:bg-lightHover hover:shadow-black cursor-pointer dark:hover:bg-darkHover dark:hover:shadow-white">
             <Image src={icon} alt="" className="w-10" />
-            <h3 className="text-lg my-4 text-gray-700">{title}</h3>
-            <p className="text-sm text-gray-600 leading-5">{description}</p>
+            <h3 className="text-lg my-4 text-gray-700 dark:text-white">{title}</h3>
+            <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{description}</p>
             <a href={link} className="flex items-center gap-2 mt-5 text-sm">
               Read More{" "}
               <Image alt="" src={assets.right_arrow} className="w-4" />
